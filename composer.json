@@ -1,0 +1,19 @@
+{
+    "name": "rootscratch/psgc",
+    "description": "Philippine Standard Geographic Code API By Rootscratch",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rootscratch\\PSGC\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "John Christian Natividad",
+            "email": "jaycee@rootscratch.com"
+        }
+    ]
+}
