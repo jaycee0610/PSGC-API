@@ -23,10 +23,10 @@ To use the PSGC-API in your PHP project, include the Composer autoloader:
 ```php
 require 'vendor/autoload.php';
 
-use Rootscratch\Psgc\PsgcApi;
+use Rootscratch\PSGC\PSGC;
 
-$psgcApi = new PsgcApi();
-$regions = $psgcApi->getRegions();
+$psgcApi = new PSGC();
+$regions = $psgcApi->Regions();
 print_r($regions);
 ```
 
