@@ -1,2 +1,52 @@
-# PSGC-API
- Philippine Standard Geographic Code API By Rootscratch
+Philippine Standard Geographic Code API by Rootscratch
+
+## Overview
+
+The PSGC-API provides access to the Philippine Standard Geographic Code (PSGC) data. This API allows users to retrieve information about regions, provinces, cities, municipalities, and barangays in the Philippines.
+
+## Features
+
+- Retrieve data for all regions, provinces, cities, municipalities, and barangays
+- Filter data based on specific criteria
+- Easy integration with other applications
+
+## Installation
+
+To install the PSGC-API via Composer, run the following command:
+```sh
+composer require rootscratch/psgc
+```
+
+## Usage
+
+To use the PSGC-API in your PHP project, include the Composer autoloader:
+```php
+require 'vendor/autoload.php';
+
+use Rootscratch\Psgc\PsgcApi;
+
+$psgcApi = new PsgcApi();
+$regions = $psgcApi->getRegions();
+print_r($regions);
+```
+
+## Endpoints
+
+- `GET /regions` - Retrieve all regions
+- `GET /provinces` - Retrieve all provinces
+- `GET /cities` - Retrieve all cities
+- `GET /municipalities` - Retrieve all municipalities
+- `GET /barangays` - Retrieve all barangays
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## Contact
+
+For any questions or inquiries, please contact Rootscratch at [jaycee@rootscratch.com](mailto:jaycee@rootscratch.com).
+
+## Packagist
+
+The PSGC-API is also available on Packagist: [rootscratch/psgc](https://packagist.org/packages/rootscratch/psgc)
+
