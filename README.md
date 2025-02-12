@@ -1,4 +1,4 @@
-Philippine Standard Geographic Code API by Rootscratch
+![Screenshot](https://raw.githubusercontent.com/jaycee0610/PSGC-API/refs/heads/main/image.png)
 
 ## Overview
 
