@@ -32,13 +32,10 @@ $regions = $psgcApi->Regions();
 print_r($regions);
 ```
 
-## Endpoints
-
-- `GET /regions` - Retrieve all regions
-- `GET /provinces` - Retrieve all provinces
-- `GET /cities` - Retrieve all cities
-- `GET /municipalities` - Retrieve all municipalities
-- `GET /barangays` - Retrieve all barangays
+- `$psgcApi->Regions($region_id = null)` - Retrieve all regions
+- `$psgcApi->Provinces($province_id = null)` - Retrieve all provinces
+- `$psgcApi->MunicipalAndCities($MunicipalAndCities_ID = null)` - Retrieve all cities & municipalities
+- `$psgcApi->Barangays($barangay_id = null)` - Retrieve all barangays
 
 ## Contributing
 
