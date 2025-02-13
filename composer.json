@@ -1,6 +1,7 @@
 {
     "name": "rootscratch/psgc",
     "description": "Philippine Standard Geographic Code API By Rootscratch",
+    "license": "MIT",
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^7.9"
