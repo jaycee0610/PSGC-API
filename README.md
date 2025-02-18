@@ -35,7 +35,17 @@ print_r($regions);
 - `$psgcApi->Regions($region_id = null)` - Retrieve all regions
 - `$psgcApi->Provinces($province_id = null)` - Retrieve all provinces
 - `$psgcApi->MunicipalAndCities($MunicipalAndCities_ID = null)` - Retrieve all cities & municipalities
+- `$psgcApi->Municipal($municipal_id = null)` - Retrieve all Municipal
+- `$psgcApi->City($city_id = null)` - Retrieve all City
 - `$psgcApi->Barangays($barangay_id = null)` - Retrieve all barangays
+
+
+![Map](https://raw.githubusercontent.com/jaycee0610/PSGC-API/refs/heads/main/map.gif)
+
+## Map Locator
+
+To view a sample of the map locator, visit [this link](https://psgc.rootscratch.com/map.html).
+
 
 ## Contributing
 
