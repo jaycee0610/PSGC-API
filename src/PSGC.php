@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 class PSGC
 {
     public const BASE_URL = 'https://psgc.rootscratch.com/';
-    public const LAST_UPDATED = '2025-02-12';
+    public const LAST_UPDATED = '2025-02-18';
     public $client;
 
     public function __construct()
@@ -45,6 +45,28 @@ class PSGC
         $response = $MunicipalAndCities_ID ? $this->client->request('GET', $url, [
             'query' => [
                 'id' => $MunicipalAndCities_ID
+            ]
+        ]) : $this->client->get($url);
+        return json_decode($response->getBody()->getContents());
+    }
+
+    public function City($city_id = null)
+    {
+        $url = self::BASE_URL . 'city';
+        $response = $city_id ? $this->client->request('GET', $url, [
+            'query' => [
+                'id' => $city_id
+            ]
+        ]) : $this->client->get($url);
+        return json_decode($response->getBody()->getContents());
+    }
+
+    public function Municipal($municipal_id = null)
+    {
+        $url = self::BASE_URL . 'municipal';
+        $response = $municipal_id ? $this->client->request('GET', $url, [
+            'query' => [
+                'id' => $municipal_id
             ]
         ]) : $this->client->get($url);
         return json_decode($response->getBody()->getContents());
