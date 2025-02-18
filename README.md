@@ -39,10 +39,9 @@ print_r($regions);
 - `$psgcApi->City($city_id = null)` - Retrieve all City
 - `$psgcApi->Barangays($barangay_id = null)` - Retrieve all barangays
 
+## Map Locator
 
 ![Map](https://raw.githubusercontent.com/jaycee0610/PSGC-API/refs/heads/main/map.gif)
-
-## Map Locator
 
 To view a sample of the map locator, visit [this link](https://psgc.rootscratch.com/map.html).
 
